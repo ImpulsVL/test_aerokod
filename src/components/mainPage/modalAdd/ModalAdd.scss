@@ -1,0 +1,14 @@
+.modal-add{
+    display: inline-flex;
+    padding: 10px 25px 10px 25px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ecebeb;
+        color: rgb(73, 116, 33);
+        border: 1px solid rgb(73, 116, 33);
+    }
+}

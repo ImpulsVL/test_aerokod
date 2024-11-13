@@ -1,0 +1,92 @@
+.plates_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.plate {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(50% - 10px);
+    height: 60px;
+    margin-top: 10px;
+    padding: 0px 32px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 17px;
+    line-height: 23px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 300ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #ecebeb;
+    }
+
+    .force_plate {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 6px;
+        height: 100%;
+        border-radius: 5px 0px 0px 5px;
+        background: rgb(47, 71, 25);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 300ms, opacity 300ms;
+    }
+
+
+    .text_plate {
+        color: rgb(47, 71, 25);
+        transition: color 300ms;
+    }
+
+    .password_plate {
+        color: rgb(181, 163, 174);
+    }
+}
+
+.plate:hover .force_plate {
+    visibility: visible;
+    opacity: 1;
+}
+
+.plate:hover .text_plate {
+    color: rgb(73, 116, 33);
+}
+
+#search_icon,
+#delete_icon {
+    width: 1.2em;
+    height: 1.2em;
+    fill: #ffffff;
+}
+
+.delete_plate {
+    display: flex;
+    padding: 5px;
+    background-color: rgb(209, 117, 117);
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(190, 64, 64);
+    }
+}
+
+.notification-message {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: rgb(209, 117, 117);
+
+    display: flex;
+    align-items: center;
+}
